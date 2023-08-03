@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, ImageBackground, TextInput } from 'react-native';
+import { View, Text, StyleSheet, ImageBackground, TextInput, TouchableOpacity } from 'react-native';
 import Dolar from '../../assets/dolar.jpeg';
 
 function Titulo() {
@@ -14,9 +14,14 @@ function Titulo() {
                     <Text style={style.textInput}>Name:</Text>
                     <TextInput
                         placeholder='Enter your name'
-                        placeholderTextColor='#fff' // Cambiar color del placeholder
+                        placeholderTextColor='#fff'
                         style={style.input}
                     />
+                    <TouchableOpacity style={style.button}>
+                        <Text style={style.textButton}>
+                            Continuar!
+                        </Text>
+                    </TouchableOpacity>
                 </View>
             </View>
         </View>
@@ -59,12 +64,26 @@ const style = StyleSheet.create({
     },
     textInput: {
         color: '#fff',
-        marginBottom: 8, 
+        marginBottom: 8,
+        fontSize: 22,
     },
     input: {
         width: 200,
+        fontSize: 20,
         borderColor: '#fff',
         borderBottomWidth: 1, 
         color: '#fff',
+    },
+    button:{
+        marginTop: 60,
+        height: 30,
+        backgroundColor: '#fff',
+        width: 100,
+        alignSelf: 'center',
+        justifyContent: 'center',
+        borderRadius: 5
+    },
+    textButton:{
+        textAlign: 'center'
     },
 });
