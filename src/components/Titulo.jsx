@@ -11,9 +11,9 @@ function Titulo() {
                     Control Financiero
                 </Text>
                 <View style={style.contentInput}>
-                    <Text style={style.textInput}>Name:</Text>
+                    <Text style={style.textInput}>Nombre:</Text>
                     <TextInput
-                        placeholder='Enter your name'
+                        placeholder='Ingresa tu nombre'
                         placeholderTextColor='#fff'
                         style={style.input}
                     />
@@ -42,7 +42,7 @@ const style = StyleSheet.create({
         width: '100%',
     },
     texto: {
-        gap: 120,
+        gap: 100,
         position: 'absolute',
         bottom: 0,
         width: '100%',
@@ -76,14 +76,17 @@ const style = StyleSheet.create({
     },
     button:{
         marginTop: 60,
-        height: 30,
-        backgroundColor: '#fff',
-        width: 100,
+        height: 35,
+        backgroundColor: 'transparent',
+        width: 120,
         alignSelf: 'center',
         justifyContent: 'center',
-        borderRadius: 5
+        borderRadius: 5,
+        borderWidth: 1,
+        borderColor: '#fff'
     },
     textButton:{
-        textAlign: 'center'
+        textAlign: 'center',
+        color: '#fff'
     },
 });

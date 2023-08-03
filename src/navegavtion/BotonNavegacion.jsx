@@ -9,7 +9,7 @@ const Tab = createMaterialBottomTabNavigator();
 function BotonNavegacion() {
     return (
         <Tab.Navigator
-            initialRouteName="Home"
+            initialRouteName="Inicio"
             activeColor="#ffbf00"
             inactiveColor="#fff"
             barStyle={{ 
@@ -17,7 +17,7 @@ function BotonNavegacion() {
             }}
         >
             <Tab.Screen
-                name="Home"
+                name="Inicio"
                 component={Home}
                 options={{
                     tabBarIcon: ({ color }) => (
